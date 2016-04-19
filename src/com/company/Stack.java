@@ -18,7 +18,7 @@ public class Stack {
 
     public void addElement() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter elements to Stack");
+        System.out.println("Enter integer numbers to Stack");
         int element = scanner.nextInt();
         stackArray[++top] = element;
     }
