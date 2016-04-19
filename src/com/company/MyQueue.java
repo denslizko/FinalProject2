@@ -8,29 +8,35 @@ import java.util.Scanner;
  */
 public class MyQueue {
 
+
     public static void main(String[] args) {
+        Scanner scannerstart = new Scanner(System.in);
+        System.out.println("Enter '1' if you want to make a List of numbers or enter another number if you don't want to make a List: ");
+        int EnteringNumbers = scannerstart.nextInt();
+
+        if (EnteringNumbers == 1) {
 
 
+            Queue myQueue = new Queue();
 
-        Queue myQueue = new Queue();
+            myQueue.insert();
+            myQueue.insert();
+            myQueue.insert();
+            myQueue.insert();
+            myQueue.insert();
+            myQueue.insert();
 
-        myQueue.insert();
-        myQueue.insert();
-        myQueue.insert();
-        myQueue.insert();
-        myQueue.insert();
-       myQueue.insert();
+            myQueue.remove();
+            myQueue.remove();
+            myQueue.remove();
 
-        myQueue.remove();
-        myQueue.remove();
-        myQueue.remove();
+            myQueue.insert();
 
-        myQueue.insert();
-
-        while (!myQueue.isEmpty()) {
-            int n = myQueue.remove();
-            System.out.println("Elem: " + n);
+            while (!myQueue.isEmpty()) {
+                int n = myQueue.remove();
+                System.out.println("Elem: " + n);
+            }
+        } else {
+            System.out.println("Thank you for your attention");
         }
-    }
-
-}
+    }}
