@@ -1,10 +1,20 @@
 package com.company;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /**
  * Created by User on 19.04.2016.
  */
 public class MyStack {
     public static void main(String[] args) {
+        try {
+
+            Scanner scannerStart = new Scanner(System.in);
+            System.out.println("Enter '1' if you want to make a List of numbers or enter another number if you don't want to make a List: ");
+            int EnteringNumbers = scannerStart.nextInt();
+
+            if (EnteringNumbers == 1) {
         Stack mStack = new Stack(10);
 
         mStack.addElement();
@@ -21,6 +31,10 @@ public class MyStack {
             System.out.print(" ");
         }
         System.out.println("");
-    }
-}
+    }else {
+                System.out.println("Thank you for your attention");
 
+            }}catch (InputMismatchException inputException){
+            System.out.println("Please enter an integer number");
+        }
+    }}
