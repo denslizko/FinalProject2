@@ -1,6 +1,6 @@
-package com.company;
+package test;
 
-import static org.junit.Assert.*;
+import com.company.MyQueue;
 
 /**
  * Created by User on 19.04.2016.
