@@ -35,6 +35,6 @@ public class MyStack {
                 System.out.println("Thank you for your attention");
 
             }}catch (InputMismatchException inputException){
-            System.out.println("Please enter an integer number");
+            System.out.println("Error! Please enter an integer number");
         }
     }}
