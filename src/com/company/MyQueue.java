@@ -9,7 +9,7 @@ public class MyQueue {
         Queue myQueue = new Queue();
 
         boolean forStart = false;
-        boolean rateapp = false;
+        boolean rateApp = false;
 
         System.out.println("Hi! You now in Groups #2 Final Project, and it`s FIFO realization");
         System.out.println("NOTICE: In the end pls rate this small but created with many love project :)");
@@ -63,11 +63,11 @@ public class MyQueue {
         Scanner rated = new Scanner(System.in);
         int rate = rated.nextInt();
         System.out.println("Your rate is: " + rate);
-        while(!rateapp){
+        while(!rateApp){
 
             if (rate == 10){
                 System.out.println("Thanks! It`s very big pleasure to have time with you! :)");
-                rateapp = true;
+                rateApp = true;
             }
 
             if (rate <10){
@@ -76,7 +76,7 @@ public class MyQueue {
                 String comments = comment.nextLine();
                 System.out.println("Pls save the screenshot with your comment and send us in skype. GL! ");
                 System.out.println("Comment: " + comments);
-                rateapp = true;
+                rateApp = true;
             }
         }
     }
