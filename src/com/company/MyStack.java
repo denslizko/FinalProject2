@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class MyStack {
     public static void main(String[] args) {
         try {
-
             Scanner scannerStart = new Scanner(System.in);
             System.out.println("Enter '1' if you want to make a List of numbers or enter another number if you don't want to make a List: ");
             int EnteringNumbers = scannerStart.nextInt();
