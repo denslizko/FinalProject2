@@ -5,9 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Created by User on 19.04.2016.
- */
+
 public class QueueTest extends Queue {
 
     @Before

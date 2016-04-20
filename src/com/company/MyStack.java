@@ -3,9 +3,7 @@ package com.company;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * Created by User on 19.04.2016.
- */
+
 public class MyStack {
     public static void main(String[] args) {
         try {

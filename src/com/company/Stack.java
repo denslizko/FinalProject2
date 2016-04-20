@@ -2,9 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-/**
- * Created by User on 19.04.2016.
- */
+
 public class Stack {
     private int mSize;
     private int[] stackArray;

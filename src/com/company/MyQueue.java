@@ -1,12 +1,8 @@
 package com.company;
 
-
-import sun.plugin.services.PlatformService;
-
 import java.util.Scanner;
 
 public class MyQueue {
-
 
     public static void main(String[] args) {
 
@@ -15,41 +11,52 @@ public class MyQueue {
         boolean forStart = false;
         boolean rateapp = false;
 
-        System.out.println("Hi! You now in Groups #2 Fina Project, and it`s FIFO realization");
+        System.out.println("Hi! You now in Groups #2 Final Project, and it`s FIFO realization");
         System.out.println("NOTICE: In the end pls rate this small but created with many love project :)");
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("Here u see detailed instruction, later it will be short variant. Pls read all description...");
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("Insert number for choose u need: ");
+        System.out.println("Enter '1' for push new item (we use ony numbers)");
+        System.out.println("Enter '2' for push many items in Queue");
+        System.out.println("Enter '3' for pop next item (in FIFO first item)");
+        System.out.println("Enter '4' if u want 2 see front item in Queue");
+        System.out.println("Enter '5' to stop this madness");
 
         while (forStart == false) {
 
-            System.out.println("Please, insert number for choose u need: ");
-            System.out.println("Enter '1' for push new item (we use ony numbers)");
-            System.out.println("Enter '2' for push many items in Queue");
-            System.out.println("Enter '3' for pop last item");
-            System.out.println("Enter '4' if u want 2 see what items in Queue");
-            System.out.println("Enter '5' to stop this madness");
+            System.out.println("Choose: ");
+            System.out.print("| '1'  push |");
+            System.out.print(" '2'  push many |");
+            System.out.print(" '3'  pop |");
+            System.out.print(" '4' see front item |");
+            System.out.println(" '5' stop |");
 
             Scanner scanner = new Scanner(System.in);
             int choose = scanner.nextInt();
 
-            if (choose == 1){
+            if (choose == 1){ // Добавляем элемент в конец
                 myQueue.insert();
             }
 
-            if (choose == 2){
+            if (choose == 2){ // Добавляем много элементов в конец, нужно проверить логику
                 System.out.println("------------------------");
                 System.out.println("SORRY: We haven`t realization for this function now, still working on it");
                 System.out.println("------------------------");
             }
 
-            if (choose == 3){
-                myQueue.remove();
+            if (choose == 3){ // Удаляем первый элемент
+                int e = myQueue.remove();
+                System.out.println("Remove: " + e);
             }
-            if (choose == 4) {
+            if (choose == 4) { // Показ первого элемента
                 System.out.println("------------------------");
                 System.out.println("SORRY: We have realization for this function but it need some rework");
                 System.out.println("------------------------");
+                System.out.println("Front item is: " + myQueue.getFront());
             }
 
-            if (choose == 5) {
+            if (choose == 5) { // Выходим из цикла
                 forStart = true;
             }
             }
@@ -62,6 +69,7 @@ public class MyQueue {
 
             if (rate == 10){
                 System.out.println("Thanks! It`s very big pleasure to have time with you! :)");
+                rateapp = true;
             }
 
             if (rate <10){
