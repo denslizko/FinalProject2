@@ -29,7 +29,7 @@ public class MyQueue {
             System.out.print("| '1'  push |");
             System.out.print(" '2'  push many |");
             System.out.print(" '3'  pop |");
-            System.out.print(" '4' see front item |");
+            System.out.print(" '4' front item |");
             System.out.println(" '5' stop |");
 
             Scanner scanner = new Scanner(System.in);
@@ -37,6 +37,7 @@ public class MyQueue {
 
             if (choose == 1){ // Добавляем элемент в конец
                 myQueue.insert();
+                System.out.println("Size of Queue " + myQueue.getSize());
             }
 
             if (choose == 2){ // Добавляем много элементов в конец, нужно проверить логику
@@ -50,9 +51,6 @@ public class MyQueue {
                 System.out.println("Remove: " + e);
             }
             if (choose == 4) { // Показ первого элемента
-                System.out.println("------------------------");
-                System.out.println("SORRY: We have realization for this function but it need some rework");
-                System.out.println("------------------------");
                 System.out.println("Front item is: " + myQueue.getFront());
             }
 
