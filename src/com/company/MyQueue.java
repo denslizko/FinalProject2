@@ -23,7 +23,7 @@ public class MyQueue {
         System.out.println("Enter '4' if u want 2 see front item in Queue");
         System.out.println("Enter '5' to stop this madness");
 
-        while (forStart == false) {
+        while (!forStart) {
 
             System.out.println("Choose: ");
             System.out.print("| '1'  push |");
@@ -63,7 +63,7 @@ public class MyQueue {
         Scanner rated = new Scanner(System.in);
         int rate = rated.nextInt();
         System.out.println("Your rate is: " + rate);
-        while(rateapp == false){
+        while(!rateapp){
 
             if (rate == 10){
                 System.out.println("Thanks! It`s very big pleasure to have time with you! :)");
