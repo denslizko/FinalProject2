@@ -8,7 +8,6 @@ public class MyQueue {
     public static void main(String[] args) {
 
             Queue myQueue = new Queue();
-
             boolean forStart = false;
             boolean rateApp = false;
 
