@@ -11,9 +11,7 @@ public class Queue {
     private int rear;
 
     public Queue() {
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter quantity of elements in queue: ");
-        maxSize = scanner.nextInt();
+        maxSize = 100;
         queue = new int[maxSize];
         rear = -1;
         front = 0;
