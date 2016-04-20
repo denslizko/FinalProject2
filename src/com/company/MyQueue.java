@@ -7,7 +7,6 @@ public class MyQueue {
 
     public static void main(String[] args) {
 
-        try {
             Queue myQueue = new Queue();
 
             boolean forStart = false;
@@ -28,6 +27,7 @@ public class MyQueue {
 
             while (!forStart) {
 
+        try {
                 System.out.println("Choose: ");
                 System.out.print("| '1'  push |");
                 System.out.print(" '2'  push many |");
@@ -60,7 +60,9 @@ public class MyQueue {
                 if (choose == 5) { // Выходим из цикла
                     forStart = true;
                 }
-            }
+            }catch (InputMismatchException inputException){
+            System.out.println("Error! Please enter an integer number");
+        }}
 
             System.out.println("Please rate our work, where 0 - the Worstest number and 10 - Bestest number");
             Scanner rated = new Scanner(System.in);
@@ -83,8 +85,5 @@ public class MyQueue {
                     rateApp = true;
                 }
             }
-        } catch (InputMismatchException inputException){
-            System.out.println("Error! Please enter an integer number");
         }
     }
-}
