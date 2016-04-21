@@ -20,7 +20,6 @@ public class QueueTest extends Queue {
 
     @Test
     public void testInsert() throws Exception {
-int a;
 
 
 
