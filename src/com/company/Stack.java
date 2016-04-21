@@ -22,13 +22,18 @@ public class Stack {
     }
 
     public int deleteElement() {
-        return stackArray[top--];
-    }
+        if (top == -1)
+            return -1;
+        else
+            return stackArray[top--];
+        }
 
     public int readTop() {
-        return stackArray[top];
-
-    }
+        if ( top == -1 )
+            return -1;
+        else
+            return stackArray[top];
+        }
 
     public boolean isEmpty() {
         return (top == -1);
@@ -36,5 +41,13 @@ public class Stack {
 
     public boolean isFull() {
         return (top == mSize - 1);
+    }
+
+    public int[] getStackArray() {
+        return stackArray;
+    }
+
+    public int getTop() {
+        return top;
     }
 }
