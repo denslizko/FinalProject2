@@ -8,6 +8,10 @@ import org.junit.Test;
 
 public class QueueTest extends Queue {
 
+    public QueueTest(int m) {
+        super(m);
+    }
+
     @Before
     public void setUp() throws Exception {
 
