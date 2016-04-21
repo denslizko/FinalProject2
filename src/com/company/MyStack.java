@@ -35,22 +35,22 @@ public class MyStack {
                 Scanner scanner = new Scanner(System.in);
                 int choose = scanner.nextInt();
 
-                if (choose == 1) { // Добавляем элемент в начало
+                if (choose == 1) {
                     myStack.addElement();
                     System.out.println("Number '" + myStack.readTop() + "' added successful");
                     System.out.println(myStack.getTop()+1);
                 }
 
-                if (choose == 2) { // Удаляем первый элемент
+                if (choose == 2) {
                     int e = myStack.deleteElement();
                     System.out.println("Delete: " + e);
                     System.out.println("Now top item is: " + myStack.readTop());
                 }
-                if (choose == 3) { // Показ первого элемента
+                if (choose == 3) {
                     System.out.println("Top item is: " + myStack.readTop());
                 }
 
-                if (choose == 4) { // Выходим из цикла
+                if (choose == 4) {
                     forStart = true;
                 }
             } catch (InputMismatchException inputException) {

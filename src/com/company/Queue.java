@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Queue {
     private int[] queue;
-    private int maxSize; // максимальное количество элементов в очереди
-    private int nElem;  // текущее количество элементов в очереди
+    private int maxSize;
+    private int nElem;
     private int front;
     private int rear;
 
@@ -25,22 +25,22 @@ public class Queue {
         int elem = scanner.nextInt();
 
         if (rear == maxSize - 1)
-        {  // циклический перенос
+        {
 
             rear = -1;
         }
 
-        queue[++rear] = elem;  //увеличение Rear и вставка
-        nElem++;  // увеличение количества элементов в очереди
+        queue[++rear] = elem;
+        nElem++;
 
     }
     public int remove() {
-        int temp = queue[front++]; // получаем первый элемент из очереди
+        int temp = queue[front++];
 
-        if (front == maxSize) { // циклический перенос
+        if (front == maxSize) {
             front = 0;
         }
-        nElem--; // уменьшаем количество элементов в очереди
+        nElem--; //
         return temp;
     }
 

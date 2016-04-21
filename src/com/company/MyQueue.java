@@ -35,20 +35,20 @@ public class MyQueue {
                 Scanner scanner = new Scanner(System.in);
                 int choose = scanner.nextInt();
 
-                if (choose == 1){ // Добавляем элемент в конец
+                if (choose == 1){
                     myQueue.insert();
                     System.out.println("Size of Queue " + myQueue.getSize());
                 }
 
-                if (choose == 2){ // Удаляем первый элемент
+                if (choose == 2){
                     int e = myQueue.remove();
                     System.out.println("Remove: " + e);
                 }
-                if (choose == 3) { // Показ первого элемента
+                if (choose == 3) {
                     System.out.println("Front item is: " + myQueue.getFront());
                 }
 
-                if (choose == 4) { // Выходим из цикла
+                if (choose == 4) {
                     forStart = true;
                 }
             }catch (InputMismatchException inputException){
