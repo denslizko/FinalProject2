@@ -20,6 +20,29 @@ public class MyQueueTest extends MyQueue {
         boolean expected = true;
         boolean queueIsEmpty = queue.isEmpty();
         Assert.assertEquals(expected, queueIsEmpty);
+    }
 
+    @Test
+    public void testFirstElementInQueue() throws Exception {
+        Queue queue = new Queue();
+        int expected = 0;
+        int firstElement = queue.getFront();
+        Assert.assertEquals(expected, firstElement);
+
+    }
+    @Test
+    public void testTheQueueIsFull() throws Exception {
+        Queue queue = new Queue();
+        boolean expected = false;
+        boolean fullQueue = queue.isFull();
+        Assert.assertEquals(expected, fullQueue);
+    }
+
+    @Test
+    public void testRemoveElement() throws Exception {
+        Queue queue = new Queue();
+        int expected = 0;
+        int removeElement = queue.remove();
+        Assert.assertEquals(expected, removeElement);
     }
 }
