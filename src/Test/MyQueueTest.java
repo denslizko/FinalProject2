@@ -45,4 +45,16 @@ public class MyQueueTest extends MyQueue {
         int removeElement = queue.remove();
         Assert.assertEquals(expected, removeElement);
     }
+
+    @Test
+    public void testRemoveElements() throws Exception{
+        Queue queue = new Queue();
+        queue.addElement(6);
+        int expected = 0;
+        queue.removeElement(6);
+        int number = queue.getSize();
+        int element = queue.getElement(number);
+        Assert.assertEquals(expected, element);
+    }
+
 }

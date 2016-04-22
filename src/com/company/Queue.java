@@ -63,4 +63,17 @@ public class Queue {
     public int getSize() {
         return nElem;
     }
+
+
+    public void addElement(int i) {
+
+    }
+
+    public void removeElement(int i) {
+
+    }
+
+    public int getElement(int number) {
+        return 0;
+    }
 }
